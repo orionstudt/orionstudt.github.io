@@ -11,51 +11,335 @@
         <meta property="og:locale" content="en_US">
         <meta property="og:image" content="favicon-32x32.png">
         <link href="favicon.ico" rel="shortcut icon">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script defer src="libs/fontawesome-free-5.0.13/js/fontawesome-all.min.js"></script>
-        <link href="libs/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="static/css/site.css" rel="stylesheet">
     </head>
     <body>
         <img src="static/images/slide-mountain-catskills.jpg" class="img-bg">
         <div class="container h-100">
-            <div class="row align-items-center justify-content-center h-100">
-                <div class="col-auto">
+            <div class="row align-items-start justify-content-center h-100 py-5">
+                <!-- Left Card -->
+                <div class="col-12 col-lg-auto mb-3 mb-lg-0">
                     <div class="landing card border-dark box-shadow">
-                        <div class="card-body py-0">
-                            <h4 class="text-center pt-2">Josh Studt</h4>
-                            <div class="text-center text-muted font-sm">
-                                <i class="fas fa-map-marker-alt"></i> Syracuse, NY
-                            </div>
-                            <hr class="my-2 border-dark" />
-                            <p class="card-text text-center">
-                                I am a full-stack web developer with experience working with ASP.NET &amp;
-                                ASP.NET Core. Working with the ASP.NET Framework I have utilized C# &amp; SQL
-                                on the backend, as well as HTML5, JavaScript, &amp; CSS on the frontend.
-                            </p>
-                            <p class="card-text text-center text-muted">
-                                This is a temporary look as I plan to get more on here :)
-                            </p>
+
+                        <!-- Left Card Header -->
+                        <div class="card-body p-2">
+                            <div class="d-flex align-items-center">
+                                <div class="col-auto pl-2 px-0">
+                                    <img src="images/me.jpg" class="border rounded-circle" style="width:120px;" />
+                                </div>
+                                <div class="col p-0 text-center">
+                                    <h4>Josh Studt</h4>
+                                    <div class="text-muted font-sm">
+                                        <i class="fas fa-map-marker-alt"></i> Syracuse, NY
+                                    </div>
+                                    <div>
+                                        <a target="_blank" href="https://linkedin.com/in/orionstudt" class="icon mr-2" title="LinkedIn">
+                                            <i class="fab pt-1 fa-linkedin"></i>
+                                        </a>
+                                        <a target="_blank" href="https://github.com/orionstudt" class="icon mr-2" title="GitHub">
+                                            <i class="fab fa-github-square"></i>
+                                        </a>
+                                        <a href="mailto:orionstudt@gmail.com" class="icon" title="Email">
+                                            <i class="fas fa-envelope-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>                           
                         </div>
-                        <div class="card-body pt-0 pb-2">
-                            <hr class="border-dark my-2" />
-                            <div class="text-center">
-                                <a target="_blank" href="https://linkedin.com/in/orionstudt" class="icon mr-2">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a target="_blank" href="https://github.com/orionstudt" class="icon mr-2">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a href="mailto:orionstudt@gmail.com" class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
+                        <!-- End Left Card Header -->
+
+                        <!-- Left Card Content -->
+                        <div class="card-body p-0">
+
+                            <!-- Left Card Navigation -->
+                            <nav class="nav nav-pills nav-justified border-bottom border-top border-dark" role="tablist">
+                                <a id="aboutMeTab" class="nav-item nav-link rounded-0 active" data-toggle="tab" href="#aboutMeContent" role="tab" aria-controls="aboutMeContent" aria-selected="true">About Me</a>
+                                <a id="technologiesTab" class="nav-item nav-link rounded-0" data-toggle="tab" href="#technologiesContent" role="tab" aria-controls="technologiesContent" aria-selected="false">Technologies</a>
+                                <a id="experienceTab" class="nav-item nav-link rounded-0" data-toggle="tab" href="#experienceContent" role="tab" aria-controls="experienceContent" aria-selected="false">Experience</a>
+                            </nav>
+                            <!-- End Left Card Navigation -->
+
+                            <!-- Left Card Tab Content -->
+                            <div class="tab-content">
+
+                                <!-- Left Card About Me Content -->
+                                <div id="aboutMeContent" class="tab-pane fade show active" role="tabpanel" aria-labelledby="aboutMeTab">
+                                    <div class="card-body p-2">
+                                        <p class="card-text m-0">
+                                            I am a full-stack web developer working primarily within the .NET ecosystem.
+                                            Most of my experience is with internal line-of-business web applications
+                                            as opposed to external customer-facing/marketing sites.                               
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- End Left Card About Me Content -->
+
+                                <!-- Left Card Technologies Content -->
+                                <div id="technologiesContent" class="tab-pane fade" role="tabpanel" aria-labelledby="technologiesTab">
+                                    <div class="card-body p-2">
+                                        <p class="card-text mb-2">
+                                            Technologies I've worked with:
+                                        </p>
+                                        <ul class="fa-ul mb-2">
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                ASP.NET &amp; ASP.NET Core (MVC)
+                                            </li>
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                Entity Framework &amp; Entity Framework Core
+                                            </li>
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                SQL &amp; MySQL
+                                            </li>
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                IIS &amp; Windows Server Suites for on-premises hosting
+                                            </li>
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                Azure Web Apps &amp; Azure SQL for cloud hosting
+                                            </li>
+                                        </ul>
+                                        <p class="card-text mb-0">
+                                            I also spent some time working on the networking side of tech which gives me an
+                                            edge into the deployment or hosting portion of web development such as
+                                            on-premises IIS/DNS configurations or SSL setup.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- End Left Card Technologies Content -->
+
+                                <!-- Left Card Experience Content -->
+                                <div id="experienceContent" class="tab-pane fade" role="tabpanel" aria-labelledby="experienceTab">
+                                    <div class="card-body p-2">
+                                        <p class="card-text mb-2">
+                                            At my current position, being part of a smaller development team, I have 
+                                            had the luxury of participating in every facet of a project from start to finish. 
+                                        </p>
+                                        <p class="card-text mb-2">
+                                            Including but not limited to:
+                                        </p>
+                                        <ul class="fa-ul mb-0">
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                Initial meetings with client
+                                            </li>
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                Estimating / quoting
+                                            </li>
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                Providing design input to designer
+                                            </li>
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                Translating design to interface
+                                            </li>
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                Line-of-business architecture / logic
+                                            </li>
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                Communication with client throughout
+                                            </li>
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                Deploying / testing with client
+                                            </li>
+                                            <li>
+                                                <span class="pt-1 fa-li">
+                                                    <i class="fas fa-angle-right"></i>
+                                                </span>
+                                                Application maintenance post-deployment
+                                            </li>
+                                        </ul>
+                                    </div>                                   
+                                </div>
+                                <!-- End Left Card Experience Content -->
+
                             </div>
-                            <div class="text-center">
-                                
-                            </div>
+                            <!-- End Left Card Tab Content -->
+
                         </div>
+                        <!-- End Left Card Content -->
+
                     </div>
                 </div>
+                <!-- End Left Card -->
+                    
+                <!-- Right Card -->
+                <div class="col">
+                    <div class="card border-dark box-shadow">
+
+                        <!-- Right Card Header -->
+                        <div class="card-body p-2">
+                            <h4 class="text-center m-0">Personal Projects</h4>
+                        </div>
+                        <!-- End Right Card -->
+
+                        <!-- Right Card Content -->
+                        <div class="card-body p-0">
+
+                            <!-- Right Card Navigation -->
+                            <nav class="nav nav-pills nav-justified border-bottom border-top border-dark" role="tablist">
+                                <a id="connectwiseTab" class="nav-item nav-link rounded-0 active" data-toggle="tab" href="#connectwiseContent" role="tab" aria-controls="connectwiseContent" aria-selected="true">ConnectWise.Http</a>
+                                <a id="duoTab" class="nav-item nav-link rounded-0" data-toggle="tab" href="#duoContent" role="tab" aria-controls="duoContent" aria-selected="false">DuoSecurity.Auth.Http</a>
+                                <!--<a id="miscTab" class="nav-item nav-link rounded-0" data-toggle="tab" href="#miscContent" role="tab" aria-controls="miscContent" aria-selected="false">Misc</a>-->
+                            </nav>
+                            <!-- End Right Card Navigation -->
+
+                            <!-- Right Card Tab Content -->
+                            <div class="tab-content">
+
+                                <!-- Right Card ConnectWise Content -->
+                                <div id="connectwiseContent" class="tab-pane fade show active" role="tabpanel" aria-labelledby="connectwiseTab">
+
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between mb-3">
+
+                                            <div>
+                                                <h4 class="mb-0">ConnectWise.Http</h4>
+                                                <span class="text-muted">Over 1,800 downloads on NuGet!</span>
+                                            </div>
+    
+                                            <div>
+                                                <a target="_blank" href="https://www.nuget.org/packages/ConnectWise.Http" class="icon" title="NuGet">
+                                                    <i class="fas fa-arrow-alt-circle-down"></i>
+                                                </a>
+                                                <a target="_blank" href="https://github.com/orionstudt/ConnectWise.Http" class="icon mr-2" title="GitHub">
+                                                    <i class="fab fa-github-square"></i>
+                                                </a>                                          
+                                            </div>
+    
+                                        </div>
+
+                                        <p class="card-text mb-2">
+                                            <b>ConnectWise.Http</b> is a .NET HttpClient wrapper for consuming ConnectWise Manage's REST API.
+                                            It provides helpers for generating requests for the API as well as utilities for handling deserialization
+                                            and error handling, and is entirely asynchronous. Since the request builder encapsulates about 95% of the API, 
+                                            excluding the more complex endpoints, it also makes it easier to build your own requests. 
+                                        </p>
+
+                                        <p class="card-text mb-2">
+                                            When I was working on the networking side of tech at a Managed Service Provider we used ConnectWise's Automate
+                                            software to monitor all of our clients' networks as well as their endpoints &amp; servers. When we transitioned
+                                            from our in-house CRM to ConnectWise Manage I saw a development opportunity and wrote a lot of integrations
+                                            between the two softwares to improve our ticketing &amp; monitoring processes as well as automate some of our billing.
+                                        </p>
+
+                                        <p class="card-text mb-0">
+                                            I found no library to help with this so to challenge myself I wrote <b>ConnectWise.Http</b>!
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                                <!-- End Right Card ConnectWise Content -->
+
+                                <!-- Right Card DUO Security Content -->
+                                <div id="duoContent" class="tab-pane fade" role="tabpanel" aria-labelledby="duoTab">
+                                    
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start justify-content-between mb-3">
+
+                                            <div>
+                                                <h4 class="mb-0">DuoSecurity.Auth.Http</h4>
+                                            </div>
+    
+                                            <div>
+                                                <a target="_blank" href="https://www.nuget.org/packages/DuoSecurity.Auth.Http" class="icon" title="NuGet">
+                                                    <i class="fas fa-arrow-alt-circle-down"></i>
+                                                </a>
+                                                <a target="_blank" href="https://github.com/orionstudt/DuoSecurity.Auth.Http" class="icon mr-2" title="GitHub">
+                                                    <i class="fab fa-github-square"></i>
+                                                </a>                                          
+                                            </div>
+    
+                                        </div>
+
+                                        <p class="card-text mb-2">
+                                            DUO Security is a Two Factor Authentication (2FA) service, and their Auth API is a REST API for 
+                                            adding 2FA functionality to any type of application. <b>DuoSecurity.Auth.Http</b> is another .NET
+                                            HttpClient wrapper to assist with consuming this API.
+                                        </p>
+
+                                        <p class="card-text m-0">
+                                            This library fully encapsulates the API - handling all deserialization &amp; errors. It is a summation
+                                            of a lot of things I learned when writing <b>ConnectWise.Http</b>.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                                <!-- End Right Card DUO Security Content -->
+
+                                <!-- Right Card ConnectWise Content -->
+                                <!--<div id="miscContent" class="tab-pane fade" role="tabpanel" aria-labelledby="miscTab">
+                                    Test Misc
+                                </div>-->
+                                <!-- End Right Card ConnectWise Content -->
+
+                            </div>
+                            <!-- End Right Card Tab Content -->
+                        </div>
+                        <!-- End Right Card Content -->
+                    </div>
+                </div>
+                <!-- End Right Card -->
             </div>
-        </div>       
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                // Collapse Shown Event
+                $('div[data-parent="#infoAccordion"]').on("shown.bs.collapse", function () {
+                    var id = $(this).attr("id");
+                    var selector = 'button[aria-controls="_id_"]'.replace("_id_", id);
+                    var toggle = $(selector).first();
+                    $(toggle).find(".fa-plus").removeClass("fa-plus").addClass("fa-minus");
+                });
+
+                // Collapse Hidden Event
+                $('div[data-parent="#infoAccordion"]').on("hidden.bs.collapse", function () {
+                    var id = $(this).attr("id");
+                    var selector = 'button[aria-controls="_id_"]'.replace("_id_", id);
+                    var toggle = $(selector).first();
+                    $(toggle).find(".fa-minus").removeClass("fa-minus").addClass("fa-plus");
+                });
+            });
+        </script>
+
     </body>
 </html>

@@ -26,12 +26,16 @@ img.img-bg {
 }
 
 .box-shadow {
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.35);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.5);
 }
 
 .icon {
     font-size: 30px;
     color: darkgray;
+}
+
+.icon .fa-linkedin {
+    font-size: 35px;
 }
 
 .icon:hover {
@@ -40,5 +44,23 @@ img.img-bg {
 }
 
 .landing {
-    max-width: 360px;
+    min-width: 360px;
+}
+
+@media screen and (min-width: 768px) {
+    .landing {
+        max-width: 360px;
+        margin: auto;
+    }
+}
+
+.nav-pills .nav-link {
+    color: #212529;
+    background-color: #f8f9fa;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    color: #212529;
+    background-color: #dae0e5;
 }
