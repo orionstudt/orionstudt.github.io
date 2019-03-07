@@ -43,8 +43,10 @@ img.img-bg {
     text-decoration: none;
 }
 
-.landing {
-    min-width: 360px;
+@media screen and (min-width: 576px) {
+    .landing {
+        min-width: 360px;
+    }
 }
 
 @media screen and (min-width: 768px) {
