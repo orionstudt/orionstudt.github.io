@@ -58,7 +58,7 @@
 
                             <!-- Left Card Navigation -->
                             <nav class="nav nav-pills nav-justified border-bottom border-top border-dark" role="tablist">
-                                <a id="aboutMeTab" class="nav-item nav-link rounded-0 active" data-toggle="tab" href="#aboutMeContent" role="tab" aria-controls="aboutMeContent" aria-selected="true">About Me</a>
+                                <a id="aboutMeTab" class="nav-item nav-link rounded-0 active" data-toggle="tab" href="#aboutMeContent" role="tab" aria-controls="aboutMeContent" aria-selected="true">About</a>
                                 <a id="technologiesTab" class="nav-item nav-link rounded-0" data-toggle="tab" href="#technologiesContent" role="tab" aria-controls="technologiesContent" aria-selected="false">Technologies</a>
                                 <a id="experienceTab" class="nav-item nav-link rounded-0" data-toggle="tab" href="#experienceContent" role="tab" aria-controls="experienceContent" aria-selected="false">Experience</a>
                             </nav>
@@ -69,7 +69,7 @@
 
                                 <!-- Left Card About Me Content -->
                                 <div id="aboutMeContent" class="tab-pane fade show active" role="tabpanel" aria-labelledby="aboutMeTab">
-                                    <div class="card-body p-2">
+                                    <div class="card-body">
                                         <p class="card-text m-0">
                                             I am a full-stack web developer working primarily within the .NET ecosystem.
                                             Most of my experience is with internal line-of-business web applications
@@ -81,7 +81,7 @@
 
                                 <!-- Left Card Technologies Content -->
                                 <div id="technologiesContent" class="tab-pane fade" role="tabpanel" aria-labelledby="technologiesTab">
-                                    <div class="card-body p-2">
+                                    <div class="card-body">
                                         <p class="card-text mb-2">
                                             Technologies I've worked with:
                                         </p>
@@ -128,7 +128,7 @@
 
                                 <!-- Left Card Experience Content -->
                                 <div id="experienceContent" class="tab-pane fade" role="tabpanel" aria-labelledby="experienceTab">
-                                    <div class="card-body p-2">
+                                    <div class="card-body">
                                         <p class="card-text mb-2">
                                             At my current position, being part of a smaller development team, I have 
                                             had the luxury of participating in every facet of a project from start to finish. 
@@ -320,26 +320,6 @@
                 <!-- End Right Card -->
             </div>
         </div>
-
-        <script type="text/javascript">
-            $(document).ready(function () {
-                // Collapse Shown Event
-                $('div[data-parent="#infoAccordion"]').on("shown.bs.collapse", function () {
-                    var id = $(this).attr("id");
-                    var selector = 'button[aria-controls="_id_"]'.replace("_id_", id);
-                    var toggle = $(selector).first();
-                    $(toggle).find(".fa-plus").removeClass("fa-plus").addClass("fa-minus");
-                });
-
-                // Collapse Hidden Event
-                $('div[data-parent="#infoAccordion"]').on("hidden.bs.collapse", function () {
-                    var id = $(this).attr("id");
-                    var selector = 'button[aria-controls="_id_"]'.replace("_id_", id);
-                    var toggle = $(selector).first();
-                    $(toggle).find(".fa-minus").removeClass("fa-minus").addClass("fa-plus");
-                });
-            });
-        </script>
 
     </body>
 </html>
