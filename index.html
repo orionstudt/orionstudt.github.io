@@ -70,7 +70,7 @@
                                 <!-- Left Card About Me Content -->
                                 <div id="aboutMeContent" class="tab-pane fade show active" role="tabpanel" aria-labelledby="aboutMeTab">
                                     <div class="card-body">
-                                        <p class="card-text">
+                                        <p class="card-text mb-2">
                                             I am a full-stack web developer working primarily within the .NET ecosystem,
                                             with a significant amount of experience stemming from internal
                                             line-of-business applications.                              
@@ -254,20 +254,20 @@
                                         <p class="card-text mb-2">
                                             <b>ConnectWise.Http</b> is a .NET HttpClient wrapper for consuming ConnectWise Manage's REST API.
                                             It provides helpers for generating requests for the API as well as utilities for handling deserialization
-                                            and error handling, and is entirely asynchronous. Since the request builder encapsulates about 95% of the API, 
-                                            excluding the more complex endpoints, it also makes it easier to build your own requests. 
+                                            and error handling, and is entirely asynchronous. The request builder encapsulates about 95% of the
+                                            endpoints, since the remaining endpoints had specific usage or were more complex than the others. To make
+                                            up for this the library also facilitates easily creating custom requests for the API without having to
+                                            go back to an HttpRequestMessage.
                                         </p>
 
-                                        <p class="card-text mb-2">
+                                        <p class="card-text mb-0">
                                             When I was working on the networking side of tech at a Managed Service Provider we used ConnectWise's Automate
                                             software to monitor all of our clients' networks as well as their endpoints &amp; servers. When we transitioned
                                             from our in-house CRM to ConnectWise Manage I saw a development opportunity and wrote a lot of integrations
                                             between the two softwares to improve our ticketing &amp; monitoring processes as well as automate some of our billing.
+                                            So, <b>ConnectWise.Http</b> is the result of these integrations merged into a single library.
                                         </p>
 
-                                        <p class="card-text mb-0">
-                                            I found no library to help with this so to challenge myself I wrote <b>ConnectWise.Http</b>!
-                                        </p>
                                     </div>
                                     
                                 </div>
@@ -295,7 +295,9 @@
                                         </div>
 
                                         <p class="card-text mb-2">
-                                            DUO Security is a Two Factor Authentication (2FA) service, and their Auth API is a REST API for 
+                                            <a href="https://duo.com" title="DUO Security">DUO</a> is a Two Factor Authentication (2FA) service that I would highly recommend as their
+                                            mobile app has a very clean API which supports push notifications as well as custom TOTP and their APIs
+                                            are easy to consume &amp; well documented. Their Auth API is a REST API for 
                                             adding 2FA functionality to any type of application. <b>DuoSecurity.Auth.Http</b> is another .NET
                                             HttpClient wrapper to assist with consuming this API.
                                         </p>
