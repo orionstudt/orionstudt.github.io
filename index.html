@@ -34,15 +34,59 @@
                     <div class="card-bottom">
                         <div class="card-bottom-content">
                             <h1 class="card-title">Josh Studt</h1>
-                            <p class="card-text">
-                                I'm a backend &amp; dev-ops engineer in Raleigh, NC. I
-                                have been building &amp; integrating RESTful APIs in the .NET ecosystem since 2015, and
-                                have experience with CI/CD through Azure DevOps, infrastructure-as-code through Pulumi,
-                                and containers with Docker &amp; Kubernetes. I have cloud experience with both AWS &amp; Azure.
-                                <br><br>
-                                Currently at Velocity Solutions I head backend development for a few products, and
-                                am working to modernize CI/CD for our entire application suite.
-                            </p>
+                            <div class="card-tabs">
+                                <input type="radio" id="tab-about" name="tab-control" checked>
+                                <input type="radio" id="tab-work" name="tab-control">
+                                <ul class="card-tab-list">
+                                    <li title="About">
+                                        <label for="tab-about" role="button">About</label>
+                                    </li>
+                                    <li title="Work">
+                                        <label for="tab-work" role="button">Work</label>
+                                    </li>
+                                </ul>
+                                <div class="card-tab-slider">
+                                    <div class="card-tab-indicator"></div>
+                                </div>
+                                <div class="card-tab-text">
+                                    <section>
+                                        <h2>About</h2>
+                                        <p>
+                                            I'm a backend &amp; dev-ops engineer in Raleigh, NC. I
+                                            have been building &amp; integrating RESTful APIs in the .NET ecosystem since 2015, and
+                                            have experience with CI/CD through Azure DevOps, infrastructure-as-code through Pulumi,
+                                            and containers with Docker &amp; Kubernetes. I have cloud experience with both AWS &amp; Azure.
+                                            <br><br>
+                                            Currently at Velocity Solutions I head backend development for a few products, and
+                                            am working to modernize CI/CD for our entire application suite.
+                                        </p>
+                                    </section>
+                                    <section>
+                                        <h2>Work</h2>
+                                        <p>
+                                            When I'm not busy I enjoy contributing to open source projects that I find interesting or useful!                     
+                                            <br><br>
+                                            My most recent contribution of note was for <a href="https://pulumi.com">Pulumi</a>, which is an infrastructure-as-code
+                                            tool that enables you to write IAC code in your language of choice. Historically you needed to invoke their Pulumi CLI
+                                            in order to execute the tool and provision cloud infrastructure, but they recently introduced their <a href="https://www.pulumi.com/automation/">Automation API</a>
+                                            that enables you to invoke the tool programmatically. I wrote the initial implementation of the Automation API for .NET, which
+                                            can be seen <a href="https://github.com/pulumi/pulumi/pull/5761">here</a> &amp; was introduced in
+                                            <a href="https://www.pulumi.com/blog/automation-api-dotnet/">this blog post.</a>
+                                            <br><br>
+                                            I've also made a <a href="https://github.com/dotnet/efcore/pull/19437">moderately sized contribution</a> to Entity Framework
+                                            adding the initial implementation of Change-tracking proxies that are detailed
+                                            <a href="https://docs.microsoft.com/en-us/ef/core/change-tracking/change-detection#change-tracking-proxies">here</a>
+                                            that debuted with EF Core 5.0. This involves enabling the proxy generation to also generate implementations for .NET's
+                                            <kbd>INotifyPropertyChanging</kbd> &amp; <kbd>INotifyPropertyChanged</kbd> interfaces.
+                                            <br><br>
+                                            Finally, I built &amp; maintain <a href="https://github.com/orionstudt/DuoSecurity.Auth.Http">DuoSecurity.Auth.Http</a> which is
+                                            a wrapper for the .NET <kbd>HttpClient</kbd> that provides a simple interface for integrating with Duo Security's
+                                            <a href="https://duo.com/docs/authapi">Auth API</a> making it very easy to add two-factor authentication to your application,
+                                            and is available <a href="https://www.nuget.org/packages/DuoSecurity.Auth.Http">on NuGet.</a>
+                                        </p>
+                                    </section>
+                                </div>
+                            </div>
                             <div class="card-icons">
                                 <div class="card-icon-row">
                                     <a id="github" target="_blank" href="https://github.com/orionstudt" class="icon-link" title="GitHub">
