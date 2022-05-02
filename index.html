@@ -2,325 +2,88 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Josh Studt - Web Developer</title>
+        <title>Josh Studt - Backend &amp; DevOps Engineer</title>
         <meta name="robots" content="noarchive">
-        <meta name="description" content="I am a full-stack developer with experience working in C# &amp; SQL on the backend, &amp; HTML5, JavaScript, &amp; CSS on the frontend.">
+        <meta name="description" content="I am a backend &amp; dev-ops engineer with experience in ASP.NET, SQL, Azure, AWS, Kubernetes, Docker, continuous integration &amp; deployment with Azure DevOps, and infrastructure-as-code with Pulumi.">
         <meta name="subject" content="Josh Studt">
+        <meta property="og:title" content="Josh Studt - Backend &amp; DevOps Engineer">
+        <meta property="og:description" content="I am a backend &amp; dev-ops engineer with experience in ASP.NET, SQL, Azure, AWS, Kubernetes, Docker, continuous integration &amp; deployment with Azure DevOps, and infrastructure-as-code with Pulumi.">
         <meta property="og:type" content="website">
         <meta property="og:site_name" content="Josh Studt">
         <meta property="og:locale" content="en_US">
-        <meta property="og:image" content="favicon-32x32.png">
+        <meta property="og:image" content="static/images/me.jpg">
+        <meta property="og:url" content="https://studt.me">
+        <meta property="twitter:title" content="Josh Studt - Backend &amp; DevOps Engineer">
+        <meta property="twitter:description" content="I am a backend &amp; dev-ops engineer with experience in ASP.NET, SQL, Azure, AWS, Kubernetes, Docker, continuous integration &amp; deployment with Azure DevOps, and infrastructure-as-code with Pulumi.">
+        <meta property="twitter:image" content="static/images/me.jpg">
         <link href="favicon.ico" rel="shortcut icon">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script defer src="libs/fontawesome-free-5.0.13/js/fontawesome-all.min.js"></script>
         <link href="static/css/site.css" rel="stylesheet">
     </head>
     <body>
-        <img src="static/images/slide-mountain-catskills.jpg" class="img-bg">
-        <div class="container h-100">
-            <div class="row align-items-start justify-content-center h-100 py-5">
-                <!-- Left Card -->
-                <div class="col-12 col-lg-auto mb-3 mb-lg-0">
-                    <div class="landing card border-dark box-shadow">
+        <div class="container">
 
-                        <!-- Left Card Header -->
-                        <div class="card-body p-2">
-                            <div class="d-flex align-items-center">
-                                <div class="col-auto p-2">
-                                    <img src="static/images/me.jpg" class="border rounded-circle" style="width:120px;" />
+            <div class="card">
+                <div class="card-container">
+
+                    <div class="card-top">
+                        <img src="static/images/me.jpg" class="card-image">
+                    </div>
+
+                    <div class="card-bottom">
+                        <div class="card-bottom-content">
+                            <h1 class="card-title">Josh Studt</h1>
+                            <p class="card-text">
+                                I'm a backend &amp; dev-ops engineer in Raleigh, NC. I
+                                have been building &amp; integrating RESTful APIs in the .NET ecosystem since 2015, and
+                                have experience with CI/CD through Azure DevOps, infrastructure-as-code through Pulumi,
+                                and containers with Docker &amp; Kubernetes. I have cloud experience with both AWS &amp; Azure.
+                                <br><br>
+                                Currently at Velocity Solutions I head backend development for a few products, and
+                                am working to modernize CI/CD for our entire application suite.
+                            </p>
+                            <div class="card-icons">
+                                <div class="card-icon-row">
+                                    <a id="github" target="_blank" href="https://github.com/orionstudt" class="icon-link" title="GitHub">
+                                        <svg class="icon-svg icon-svg--github" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <title>GitHub</title>
+                                            <g class="icon-group" fill="none" fill-rule="evenodd">
+                                              <circle class="icon-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
+                                              <circle class="icon-group__inner-circle" fill="#000" cx="300" cy="300" r="252.5" />
+                                              <path class="icon-group__icon" d="M300 150c-82.8348 0-150 68.8393-150 153.817 0 67.9687 42.991 125.558 102.5893 145.9151 7.5 1.4063 10.2455-3.3482 10.2455-7.433 0-3.683-.134-13.3259-.2009-26.183-41.7187 9.308-50.558-20.625-50.558-20.625-6.8304-17.7456-16.6741-22.5-16.6741-22.5-13.5938-9.576 1.0044-9.375 1.0044-9.375 15.067 1.0714 22.9688 15.8705 22.9688 15.8705 13.3929 23.5045 35.0893 16.741 43.6607 12.7902 1.3393-9.9107 5.2232-16.741 9.509-20.558-33.2813-3.884-68.3036-17.076-68.3036-76.0045 0-16.808 5.8259-30.5357 15.4018-41.25-1.5402-3.884-6.6965-19.5536 1.4732-40.7143 0 0 12.5893-4.1518 41.25 15.7366 11.9866-3.4152 24.7768-5.0893 37.567-5.1562 12.7231.067 25.5803 1.741 37.5669 5.1562 28.6607-19.8884 41.183-15.7366 41.183-15.7366 8.1697 21.1607 3.0134 36.8304 1.4733 40.7143 9.5758 10.7812 15.4017 24.509 15.4017 41.25 0 59.0625-35.0892 72.0536-68.5044 75.8705 5.3571 4.7545 10.1785 14.1295 10.1785 28.4598 0 20.558-.2009 37.1652-.2009 42.1875 0 4.0849 2.6786 8.9063 10.3125 7.3661C407.076 429.308 450 371.7187 450 303.817 450 218.8393 382.8348 150 300 150z"
+                                                fill="#FFF" fill-rule="nonzero" />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                    <a id="linkedin" target="_blank" href="https://linkedin.com/in/orionstudt" class="icon-link" title="LinkedIn">
+                                        <svg class="icon-svg icon-svg--linkedin" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                            <title>LinkedIn</title>
+                                            <g class="icon-group" fill="none" fill-rule="evenodd">
+                                              <circle class="icon-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
+                                              <circle class="icon-group__inner-circle" fill="#2D76B0" cx="300" cy="300" r="252.5" />
+                                              <path class="icon-group__icon" d="M278.9308 253.1923h43.5769v20.0539h.5923c6.0923-11.5077 20.9-23.6077 43.0692-23.6077 46.0308 0 54.577 30.2923 54.577 69.723v80.2154h-45.4385v-71.1615c0-17.0077-.2539-38.8385-23.6077-38.8385-23.6923 0-27.2462 18.5308-27.2462 37.5693v72.4307h-45.4384l-.0846-146.3846zm-74.1231 0h45.523V399.577h-45.523V253.1923zm22.8461-72.7692c14.5539 0 26.4 11.8461 26.4 26.4 0 14.5538-11.8461 26.4-26.4 26.4-14.6384 0-26.4-11.8462-26.4-26.4 0-14.5539 11.7616-26.4 26.4-26.4z"
+                                                fill="#000" fill-rule="nonzero" />
+                                            </g>
+                                        </svg>
+                                    </a>
                                 </div>
-                                <div class="col p-0 text-center">
-                                    <h4>Josh Studt</h4>
-                                    <div class="text-muted font-sm">
-                                        <i class="fas fa-map-marker-alt"></i> Syracuse, NY
-                                    </div>
-                                    <div>
-                                        <a target="_blank" href="https://linkedin.com/in/orionstudt" class="icon mr-2" title="LinkedIn">
-                                            <i class="fab pt-1 fa-linkedin"></i>
-                                        </a>
-                                        <a target="_blank" href="https://github.com/orionstudt" class="icon mr-2" title="GitHub">
-                                            <i class="fab fa-github-square"></i>
-                                        </a>
-                                        <a href="mailto:orionstudt@gmail.com" class="icon" title="Email">
-                                            <i class="fas fa-envelope-square"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>                           
-                        </div>
-                        <!-- End Left Card Header -->
-
-                        <!-- Left Card Content -->
-                        <div class="card-body p-0">
-
-                            <!-- Left Card Navigation -->
-                            <nav class="nav nav-pills nav-justified border-bottom border-top border-dark" role="tablist">
-                                <a id="aboutMeTab" class="nav-item nav-link rounded-0 active" data-toggle="tab" href="#aboutMeContent" role="tab" aria-controls="aboutMeContent" aria-selected="true">About</a>
-                                <a id="technologiesTab" class="nav-item nav-link rounded-0" data-toggle="tab" href="#technologiesContent" role="tab" aria-controls="technologiesContent" aria-selected="false">Technologies</a>
-                                <a id="experienceTab" class="nav-item nav-link rounded-0" data-toggle="tab" href="#experienceContent" role="tab" aria-controls="experienceContent" aria-selected="false">Experience</a>
-                            </nav>
-                            <!-- End Left Card Navigation -->
-
-                            <!-- Left Card Tab Content -->
-                            <div class="tab-content">
-
-                                <!-- Left Card About Me Content -->
-                                <div id="aboutMeContent" class="tab-pane fade show active" role="tabpanel" aria-labelledby="aboutMeTab">
-                                    <div class="card-body">
-                                        <p class="card-text mb-2">
-                                            I am a full-stack web developer with strong experience within the .NET ecosystem,
-                                            &amp; a significant amount of experience stemming from internal
-                                            line-of-business applications.                              
-                                        </p>
-                                        <p class="card-text m-0">
-                                            I also have experience consuming REST APIs, as I have had to integrate
-                                            many different cloud services into various web applications. 
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- End Left Card About Me Content -->
-
-                                <!-- Left Card Technologies Content -->
-                                <div id="technologiesContent" class="tab-pane fade" role="tabpanel" aria-labelledby="technologiesTab">
-                                    <div class="card-body">
-                                        <p class="card-text mb-2">
-                                            Technologies I've worked with:
-                                        </p>
-                                        <ul class="fa-ul mb-2">
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                ASP.NET &amp; ASP.NET Core (MVC)
-                                            </li>
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                Entity Framework &amp; Entity Framework Core
-                                            </li>
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                SQL &amp; MySQL
-                                            </li>
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                IIS &amp; Windows Server Suites for on-premises hosting
-                                            </li>
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                Azure App Services, Azure SQL, &amp; Azure Blob Storage for cloud hosting
-                                            </li>
-                                        </ul>
-                                        <p class="card-text mb-0">
-                                            I have also spent time working on the networking side of tech, which has
-                                            given me an edge into the deployment &amp; hosting portion of web
-                                            development, such as on-premises IIS/DNS configuration or SSL setup.
-                                        </p>
-                                    </div>
-                                </div>
-                                <!-- End Left Card Technologies Content -->
-
-                                <!-- Left Card Experience Content -->
-                                <div id="experienceContent" class="tab-pane fade" role="tabpanel" aria-labelledby="experienceTab">
-                                    <div class="card-body">
-                                        <p class="card-text mb-2">
-                                            While being a key part of a smaller development team, my current
-                                            position has allowed me the luxury of participating in every facet
-                                            of a project from start to finish.
-                                        </p>
-                                        <p class="card-text mb-2">
-                                            Including but not limited to:
-                                        </p>
-                                        <ul class="fa-ul mb-0">
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                Initial meetings with client
-                                            </li>
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                Estimating / quoting
-                                            </li>
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                Translating design to interface
-                                            </li>
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                Line-of-business architecture / logic
-                                            </li>
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                Communication with client throughout
-                                            </li>
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                Deploying / testing with client
-                                            </li>
-                                            <li>
-                                                <span class="pt-1 fa-li">
-                                                    <i class="fas fa-angle-right"></i>
-                                                </span>
-                                                Application maintenance post-deployment
-                                            </li>
-                                        </ul>
-                                    </div>                                   
-                                </div>
-                                <!-- End Left Card Experience Content -->
-
                             </div>
-                            <!-- End Left Card Tab Content -->
-
                         </div>
-                        <!-- End Left Card Content -->
-
                     </div>
                 </div>
-                <!-- End Left Card -->
-                    
-                <!-- Right Card -->
-                <div class="col">
-                    <div class="card border-dark box-shadow mb-5 mb-lg-0">
-
-                        <!-- Right Card Header -->
-                        <div class="card-body p-3">
-                            <h4 class="text-center m-0">Personal Projects</h4>
-                        </div>
-                        <!-- End Right Card -->
-
-                        <!-- Right Card Content -->
-                        <div class="card-body p-0">
-
-                            <!-- Right Card Navigation -->
-                            <nav class="nav nav-pills nav-justified border-bottom border-top border-dark" role="tablist">
-                                <a id="connectwiseTab" class="nav-item nav-link rounded-0 active" data-toggle="tab" href="#connectwiseContent" role="tab" aria-controls="connectwiseContent" aria-selected="true">ConnectWise.Http</a>
-                                <a id="duoTab" class="nav-item nav-link rounded-0" data-toggle="tab" href="#duoContent" role="tab" aria-controls="duoContent" aria-selected="false">DuoSecurity.Auth.Http</a>
-                                <!--<a id="miscTab" class="nav-item nav-link rounded-0" data-toggle="tab" href="#miscContent" role="tab" aria-controls="miscContent" aria-selected="false">Misc</a>-->
-                            </nav>
-                            <!-- End Right Card Navigation -->
-
-                            <!-- Right Card Tab Content -->
-                            <div class="tab-content">
-
-                                <!-- Right Card ConnectWise Content -->
-                                <div id="connectwiseContent" class="tab-pane fade show active" role="tabpanel" aria-labelledby="connectwiseTab">
-
-                                    <div class="card-body">
-                                        <div class="row mx-0 align-items-start justify-content-between mb-3">
-
-                                            <div class="p-0 col-12 col-md-auto text-center text-md-left">    
-                                                <h4 class="mb-0">ConnectWise.Http</h4>
-                                                <span class="text-muted">Over 2,100 downloads on NuGet!</span>
-                                            </div>
-    
-                                            <div class="text-center p-0 col-12 col-md-auto">
-                                                <a target="_blank" href="https://www.nuget.org/packages/ConnectWise.Http" class="icon" title="NuGet">
-                                                    <i class="fas fa-arrow-alt-circle-down" style="width:.9em;"></i>
-                                                </a>
-                                                <a target="_blank" href="https://github.com/orionstudt/ConnectWise.Http" class="icon mr-2" title="GitHub">
-                                                    <i class="fab fa-github-square"></i>
-                                                </a>                                          
-                                            </div>
-    
-                                        </div>
-
-                                        <p class="card-text mb-2">
-                                            <b>ConnectWise.Http</b> is a .NET HttpClient wrapper for consuming ConnectWise Manage's REST API.
-                                            It provides helpers for generating requests for the API as well as utilities for handling deserialization
-                                            and error handling, and is entirely asynchronous. The request builder encapsulates about 95% of the
-                                            endpoints, since the remaining endpoints had specific usage or were more complex than the others. To make
-                                            up for this the library also facilitates easily creating custom requests for the API without having to
-                                            go back to an HttpRequestMessage.
-                                        </p>
-
-                                        <p class="card-text mb-0">
-                                            When I was working on the networking side of tech at a Managed Service Provider we used ConnectWise's Automate
-                                            software to monitor all of our clients' networks as well as their endpoints &amp; servers. When we transitioned
-                                            from our in-house CRM to ConnectWise Manage I saw a development opportunity and wrote a lot of integrations
-                                            between the two softwares to improve our ticketing &amp; monitoring processes as well as automate some of our billing.
-                                            So, <b>ConnectWise.Http</b> is the result of these integrations merged into a single library.
-                                        </p>
-
-                                    </div>
-                                    
-                                </div>
-                                <!-- End Right Card ConnectWise Content -->
-
-                                <!-- Right Card DUO Security Content -->
-                                <div id="duoContent" class="tab-pane fade" role="tabpanel" aria-labelledby="duoTab">
-                                    
-                                    <div class="card-body">
-                                        <div class="row mx-0 align-items-center justify-content-between mb-3">
-
-                                            <div class="p-0 col-12 col-md-auto text-center text-md-left">
-                                                <h4 class="mb-0">DuoSecurity.Auth.Http</h4>
-                                            </div>
-    
-                                            <div class="p-0 col-12 col-md-auto text-center">
-                                                <a target="_blank" href="https://www.nuget.org/packages/DuoSecurity.Auth.Http" class="icon" title="NuGet">
-                                                    <i class="fas fa-arrow-alt-circle-down" style="width:.9em;"></i>
-                                                </a>
-                                                <a target="_blank" href="https://github.com/orionstudt/DuoSecurity.Auth.Http" class="icon mr-2" title="GitHub">
-                                                    <i class="fab fa-github-square"></i>
-                                                </a>                                          
-                                            </div>
-    
-                                        </div>
-
-                                        <p class="card-text mb-2">
-                                            <a href="https://duo.com" title="DUO Security">DUO</a> is a Two Factor Authentication (2FA) service that I would highly recommend as their
-                                            mobile app has a very clean interface which supports push notifications as well as custom TOTP and their APIs
-                                            are easy to consume &amp; well documented. Their Auth API is a REST API for 
-                                            adding 2FA functionality to any type of application.
-                                        </p>
-
-                                        <p class="card-text m-0">
-                                            <b>DuoSecurity.Auth.Http</b> is another .NET HttpClient wrapper to assist with consuming this API.
-                                            This library fully encapsulates the API - handling all deserialization &amp; errors. It is a summation
-                                            of a lot of things I learned when writing <b>ConnectWise.Http</b>.
-                                        </p>
-
-                                    </div>
-
-                                </div>
-                                <!-- End Right Card DUO Security Content -->
-
-                                <!-- Right Card ConnectWise Content -->
-                                <!--<div id="miscContent" class="tab-pane fade" role="tabpanel" aria-labelledby="miscTab">
-                                    Test Misc
-                                </div>-->
-                                <!-- End Right Card ConnectWise Content -->
-
-                            </div>
-                            <!-- End Right Card Tab Content -->
-                        </div>
-                        <!-- End Right Card Content -->
-                    </div>
-                </div>
-                <!-- End Right Card -->
             </div>
-        </div>
 
+        </div>
     </body>
+    <script defer>
+        function showIcon(id) {
+            var icon = document.getElementById(id);
+            icon.classList.add("show");
+        }
+        setTimeout(function () {
+            showIcon("github");
+        }, 600);
+        setTimeout(function () {
+            showIcon("linkedin");
+        }, 850);
+    </script>
 </html>

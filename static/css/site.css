@@ -1,68 +1,234 @@
-body {
-    height: 100%;
-    background-color: #e9ecef;
+@font-face {
+    font-family: 'Be Vietnam Pro SemiBold';
+    src: url('fonts/bevietnampro-semibold-webfont.woff2') format('woff2'),
+         url('fonts/bevietnampro-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-img.img-bg {
-    /* Set rules to fill background */
-  min-height: 100%;
-  min-width: 1024px;
-	
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
-	
-  /* Set up positioning */
-  position: fixed;
-  top: 0;
-  left: 0;
+@font-face {
+    font-family: 'Be Vietnam Pro Regular';
+    src: url('fonts/bevietnampro-regular-webfont.woff2') format('woff2'),
+         url('fonts/bevietnampro-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-    img.img-bg {
-        left:50%;
-        margin-left: -512px;   /* 50% */
+@keyframes card-spawn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
     }
 }
 
-.box-shadow {
-    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.5);
+@keyframes icon-spawn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.icon {
-    font-size: 30px;
-    color: darkgray;
+@keyframes text-spawn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    20% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
-.icon .fa-linkedin {
-    font-size: 35px;
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro Regular', serif;
+}
+
+div.container {
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0) radial-gradient(91.4% 65% at 50% 0%, rgb(67, 67, 67) 0%, rgb(60, 60, 60) 100%) repeat scroll 0% 0%;
+}
+
+div.card {
+    display: block;
+    background-color: white;
+    width: 430px;
+    height: auto;
+    min-height: 200px;
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    animation: card-spawn .5s;
+}
+
+div.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    height: auto;
+    max-width: 430px;
+    border-radius: inherit;
+}
+
+
+div.card-top {
+    overflow: hidden;
+    width: 100%;
+    flex: 0 0 auto;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+img.card-image {
+    pointer-events: none;
+    user-select: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    object-position: center center;
+    object-fit: cover;
+    image-rendering: auto;
+}
+
+div.card-bottom {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: min-content;
+    flex: 0 0 auto;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: inherit;
+}
+
+div.card-bottom-content {
+    padding: 40px;
+    border-radius: inherit;
+}
+
+h1.card-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 31px;
+    font-weight: 800;
+    line-height: 37.2px;
+    letter-spacing: -1px;
+    font-family: 'Be Vietnam Pro SemiBold', serif;
+    animation: 1.5s text-spawn ease-out;
+}
+
+p.card-text {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: normal;
+    color: rgb(34, 34, 34);
+    animation: 2s text-spawn ease-out;
+}
+
+div.card-icons {
+    display: block;
+    width: 100%;
+}
+
+div.card-icon-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-link {
+    margin-right: 30px;
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+    animation: icon-spawn .5s;
 }
 
 .icon:hover {
     color: black;
     text-decoration: none;
+    transform: scale(1.25);
 }
 
-@media screen and (min-width: 576px) {
-    .landing {
-        min-width: 360px;
-    }
+.icon-link .icon-svg {
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
-@media screen and (min-width: 768px) {
-    .landing {
-        max-width: 360px;
-        margin: auto;
-    }
+.icon-link .icon-svg--github {
+    color: #000;
 }
 
-.nav-pills .nav-link {
-    color: #212529;
-    background-color: #f8f9fa;
+.icon-link .icon-svg--linkedin {
+    color: #2d76b0;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .nav-link:hover {
-    color: #212529;
-    background-color: #dae0e5;
+.icon-link .icon-svg--email {
+    color: #0066ff;
+}
+
+.icon-link .icon-svg .icon-group__icon {
+    fill: #191308;
+    transition: all .2s;
+}
+
+.icon-link .icon-svg .icon-group__inner-circle {
+    fill: transparent;
+    transition: all .2s;
+}
+
+.icon-link .icon-svg .icon-group__outline {
+    stroke: #191308;
+    transform-origin: 50% 50%;
+    transition: all .2s;
+}
+
+.icon-link .icon-svg:hover .icon-group__icon,
+.icon-link .icon-svg:active .icon-group__icon,
+.icon-link .icon-svg:focus .icon-group__icon {
+    fill: #FFFBFA;
+    transition: all .45s;
+}
+
+.icon-link .icon-svg:hover .icon-group__inner-circle,
+.icon-link .icon-svg:active .icon-group__inner-circle,
+.icon-link .icon-svg:focus .icon-group__inner-circle {
+    fill: currentColor;
+    transition: all .45s;
+}
+
+.icon-link .icon-svg:hover .icon-group__outline,
+.icon-link .icon-svg:active .icon-group__outline,
+.icon-link .icon-svg:focus .icon-group__outline {
+    stroke: currentColor;
+    transform: scale(1.1);
+    transition: all .45s;
 }
