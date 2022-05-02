@@ -303,7 +303,7 @@ div.card-tabs div.card-tab-text section {
     display: none;
     animation-name: tab-content;
     animation-direction: normal;
-    animation-duration: 0.3s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;
     line-height: 1.4;
