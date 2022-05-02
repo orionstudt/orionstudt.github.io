@@ -53,20 +53,22 @@
 }
 
 body {
-    height: 100%;
     margin: 0;
-    padding: 0;
+    height: 100%;
     box-sizing: border-box;
     font-family: 'Be Vietnam Pro Regular', serif;
+    background: rgba(0, 0, 0, 0) radial-gradient(91.4% 65% at 50% 0%, rgb(67, 67, 67) 0%, rgb(60, 60, 60) 100%) repeat scroll 0% 0%;
 }
 
 div.container {
     display: flex;
-    min-height: 100%;
-    width: 100%;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0) radial-gradient(91.4% 65% at 50% 0%, rgb(67, 67, 67) 0%, rgb(60, 60, 60) 100%) repeat scroll 0% 0%;
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    box-sizing: inherit;
 }
 
 div.card {
@@ -83,7 +85,7 @@ div.card {
 div.card-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 0px;
     width: 100%;
@@ -94,11 +96,23 @@ div.card-container {
 
 
 div.card-top {
+    position: relative;
     overflow: hidden;
     width: 100%;
     flex: 0 0 auto;
+    height: 324px;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
+    aspect-ratio: 1.32716 / 1;
+}
+
+div.card-image-content {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    inset: 0px;
 }
 
 img.card-image {
@@ -112,6 +126,24 @@ img.card-image {
     object-position: center center;
     object-fit: cover;
     image-rendering: auto;
+}
+
+@media (max-width: 430px) {
+    div.container {
+        padding: 0;
+    }
+
+    div.card {
+        border-radius: 0;
+    }
+
+    /* div.card-top {
+        width: 100%;
+        height: 1px;
+        inset: auto;
+        flex: 1 0 0px;
+        aspect-ratio: unset;
+    } */
 }
 
 div.card-bottom {
