@@ -126,6 +126,7 @@ div.card-image-content {
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     inset: 0px;
+    z-index: 10;
 }
 
 img.card-image {
@@ -140,6 +141,8 @@ img.card-image {
     object-fit: cover;
     image-rendering: auto;
 }
+
+/* Responsive Styles */
 
 @media (max-width: 430px) {
     div.container {
@@ -173,13 +176,20 @@ div.card-bottom {
 }
 
 div.card-bottom-content {
-    padding: 30px;
     border-radius: inherit;
+}
+
+div.card-heading {
+    padding: 25px 25px 0;
+}
+
+.card-bottom-padding {
+    padding: 0 25px 25px;
 }
 
 h1.card-title {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     font-size: 31px;
     font-weight: 800;
     line-height: 37.2px;
@@ -187,6 +197,23 @@ h1.card-title {
     font-family: 'Be Vietnam Pro SemiBold', serif;
     animation: 1.5s text-spawn ease-out;
     text-align: center;
+}
+
+h3.card-subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-family: 'Be Vietnam Pro SemiBold', serif;
+    animation: 1.5s text-spawn ease-out;
+    text-align: center;
+    color: #717171;
+}
+
+h3.card-subtitle span {
+    border-top: 2px solid #dbdbdb;
+    padding-top: 4px;
 }
 
 /* Card Tab Styles */
@@ -209,8 +236,7 @@ div.card-tabs {
 }
 
 div.card-tabs p {
-    margin-top: 0;
-    margin-bottom: 20px;
+    margin: 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 25.6px;
@@ -325,6 +351,12 @@ div.card-tabs div.card-tab-text section h2::after {
     left: 1px;
 }
 
+/* Projects Tab Styles */
+
+div.projects-tab input[name="projects-tab-control"] {
+    display: none;
+}
+
 /* Slider Animation Styles */
 
 input[name="tab-control"]:nth-of-type(1):checked ~ ul > li:nth-child(1) label {
@@ -356,8 +388,10 @@ input[name="tab-control"]:nth-of-type(2):checked ~ div.card-tab-text > section:n
 /* Card Icon Styles */
 
 div.card-icons {
-    display: block;
-    width: 100%;
+    z-index: 15;
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
 }
 
 div.card-icon-row {
@@ -382,8 +416,12 @@ div.card-icon-row {
 }
 
 .icon-link .icon-svg {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.icon-link[id="github"] {
+    margin-right: 8px;
 }
 
 .icon-link .icon-svg--github {

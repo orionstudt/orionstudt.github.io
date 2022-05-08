@@ -26,6 +26,32 @@
                 <div class="card-container">
 
                     <div class="card-top">
+                        <div class="card-icons">
+                            <div class="card-icon-row">
+                                <a id="github" target="_blank" href="https://github.com/orionstudt" class="icon-link" title="GitHub">
+                                    <svg class="icon-svg icon-svg--github" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                        <title>GitHub</title>
+                                        <g class="icon-group" fill="none" fill-rule="evenodd">
+                                        <circle class="icon-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
+                                        <circle class="icon-group__inner-circle" fill="#000" cx="300" cy="300" r="252.5" />
+                                        <path class="icon-group__icon" d="M300 150c-82.8348 0-150 68.8393-150 153.817 0 67.9687 42.991 125.558 102.5893 145.9151 7.5 1.4063 10.2455-3.3482 10.2455-7.433 0-3.683-.134-13.3259-.2009-26.183-41.7187 9.308-50.558-20.625-50.558-20.625-6.8304-17.7456-16.6741-22.5-16.6741-22.5-13.5938-9.576 1.0044-9.375 1.0044-9.375 15.067 1.0714 22.9688 15.8705 22.9688 15.8705 13.3929 23.5045 35.0893 16.741 43.6607 12.7902 1.3393-9.9107 5.2232-16.741 9.509-20.558-33.2813-3.884-68.3036-17.076-68.3036-76.0045 0-16.808 5.8259-30.5357 15.4018-41.25-1.5402-3.884-6.6965-19.5536 1.4732-40.7143 0 0 12.5893-4.1518 41.25 15.7366 11.9866-3.4152 24.7768-5.0893 37.567-5.1562 12.7231.067 25.5803 1.741 37.5669 5.1562 28.6607-19.8884 41.183-15.7366 41.183-15.7366 8.1697 21.1607 3.0134 36.8304 1.4733 40.7143 9.5758 10.7812 15.4017 24.509 15.4017 41.25 0 59.0625-35.0892 72.0536-68.5044 75.8705 5.3571 4.7545 10.1785 14.1295 10.1785 28.4598 0 20.558-.2009 37.1652-.2009 42.1875 0 4.0849 2.6786 8.9063 10.3125 7.3661C407.076 429.308 450 371.7187 450 303.817 450 218.8393 382.8348 150 300 150z"
+                                            fill="#FFF" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a id="linkedin" target="_blank" href="https://linkedin.com/in/orionstudt" class="icon-link" title="LinkedIn">
+                                    <svg class="icon-svg icon-svg--linkedin" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                                        <title>LinkedIn</title>
+                                        <g class="icon-group" fill="none" fill-rule="evenodd">
+                                        <circle class="icon-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
+                                        <circle class="icon-group__inner-circle" fill="#2D76B0" cx="300" cy="300" r="252.5" />
+                                        <path class="icon-group__icon" d="M278.9308 253.1923h43.5769v20.0539h.5923c6.0923-11.5077 20.9-23.6077 43.0692-23.6077 46.0308 0 54.577 30.2923 54.577 69.723v80.2154h-45.4385v-71.1615c0-17.0077-.2539-38.8385-23.6077-38.8385-23.6923 0-27.2462 18.5308-27.2462 37.5693v72.4307h-45.4384l-.0846-146.3846zm-74.1231 0h45.523V399.577h-45.523V253.1923zm22.8461-72.7692c14.5539 0 26.4 11.8461 26.4 26.4 0 14.5538-11.8461 26.4-26.4 26.4-14.6384 0-26.4-11.8462-26.4-26.4 0-14.5539 11.7616-26.4 26.4-26.4z"
+                                            fill="#000" fill-rule="nonzero" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                         <div class="card-image-content">
                             <img src="static/images/me.jpg" class="card-image">
                         </div>
@@ -33,30 +59,33 @@
 
                     <div class="card-bottom">
                         <div class="card-bottom-content">
-                            <h1 class="card-title">Josh Studt</h1>
+                            <div class="card-heading">
+                                <h1 class="card-title">Josh Studt</h1>
+                                <h3 class="card-subtitle"><span>Backend / DevOps Engineer</span></h3>
+                            </div>                    
                             <div class="card-tabs">
                                 <input type="radio" id="tab-about" name="tab-control" checked>
-                                <input type="radio" id="tab-work" name="tab-control">
+                                <input type="radio" id="tab-projects" name="tab-control">
                                 <ul class="card-tab-list">
                                     <li title="About">
                                         <label for="tab-about" role="button">About</label>
                                     </li>
                                     <li title="Work">
-                                        <label for="tab-work" role="button">Work</label>
+                                        <label for="tab-projects" role="button">Projects</label>
                                     </li>
                                 </ul>
                                 <div class="card-tab-slider">
                                     <div class="card-tab-indicator"></div>
                                 </div>
                                 <div class="card-tab-text">
-                                    <section>
+                                    <section class="card-bottom-padding">
                                         <h2>About</h2>
                                         <p>
                                             I'm a backend / dev-ops engineer in Raleigh, NC. I have been building and integrating
                                             RESTful APIs in the .NET ecosystem since 2015, and have experience with CI/CD through
                                             Azure DevOps, and containers with Docker in Kubernetes. I have cloud experience with
                                             both AWS &amp; Azure, and have automated the provisioning of cloud infrastructure to
-                                            each with the use of the infrastructure-as-code tool called Pulumi.
+                                            each with the use of the infrastructure-as-code tool, Pulumi.
                                             I'm also a member of Pulumi's community champion program called the
                                             <a href="https://www.pulumi.com/blog/introducing-the-puluminaries/">Puluminaries</a>,
                                             having made a handful of contributions to the tool on github.
@@ -66,55 +95,50 @@
                                         </p>
                                     </section>
                                     <section>
-                                        <h2>Work</h2>
-                                        <p>
-                                            When I'm not busy I enjoy contributing to open source projects that I find interesting or useful!                     
-                                            <br><br>
-                                            My most recent contribution of note was for <a href="https://pulumi.com">Pulumi</a>, which is an infrastructure-as-code
-                                            tool that enables you to write IAC in your language of choice. Historically you needed to invoke their Pulumi CLI
-                                            in order to execute the tool and provision cloud infrastructure, but they recently introduced their <a href="https://www.pulumi.com/automation/">Automation API</a>
-                                            that enables you to invoke the tool programmatically. I wrote the initial implementation of the Automation API for .NET, which
-                                            can be seen <a href="https://github.com/pulumi/pulumi/pull/5761">here</a> and was introduced in
-                                            <a href="https://www.pulumi.com/blog/automation-api-dotnet/">this blog post.</a>
-                                            <br><br>
-                                            I've also made a <a href="https://github.com/dotnet/efcore/pull/19437">moderately sized contribution</a> to Entity Framework
-                                            adding the initial implementation of Change-tracking proxies that are detailed
-                                            <a href="https://docs.microsoft.com/en-us/ef/core/change-tracking/change-detection#change-tracking-proxies">here</a>
-                                            that debuted with EF Core 5.0. This involves enabling the proxy generation to also generate implementations for .NET's
-                                            <kbd>INotifyPropertyChanging</kbd> &amp; <kbd>INotifyPropertyChanged</kbd> interfaces.
-                                            <br><br>
-                                            Finally, I built and maintain <a href="https://github.com/orionstudt/DuoSecurity.Auth.Http">DuoSecurity.Auth.Http</a> which is
-                                            a wrapper for the .NET <kbd>HttpClient</kbd> that provides a simple interface for integrating with Duo Security's
-                                            <a href="https://duo.com/docs/authapi">Auth API</a> making it very easy to add two-factor authentication to your application,
-                                            and is available <a href="https://www.nuget.org/packages/DuoSecurity.Auth.Http">on NuGet.</a>
-                                        </p>
+                                        <h2>Projects</h2>
+                                        <div class="projects-tab">
+                                            <input type="radio" id="tab-projects-pulumi" name="projects-tab-control" checked>
+                                            <label for="tab-projects-pulumi" class="projects-tab-header">Pulumi</label>
+                                            <div class="projects-tab-content">
+                                                <h2>Pulumi</h2>
+                                                <p>
+                                                    My most recent contribution of note was for <a href="https://pulumi.com">Pulumi</a>, which is an infrastructure-as-code
+                                                    tool that enables you to write IAC in your language of choice. Historically you needed to invoke their Pulumi CLI
+                                                    in order to execute the tool and provision cloud infrastructure, but they recently introduced their <a href="https://www.pulumi.com/automation/">Automation API</a>
+                                                    that enables you to invoke the tool programmatically. I wrote the initial implementation of the Automation API for .NET, which
+                                                    can be seen <a href="https://github.com/pulumi/pulumi/pull/5761">here</a> and was introduced in
+                                                    <a href="https://www.pulumi.com/blog/automation-api-dotnet/">this blog post.</a>
+                                                </p>
+                                            </div>    
+                                        </div>
+                                        <div class="projects-tab">
+                                            <input type="radio" id="tab-projects-entityframework" name="projects-tab-control" checked>
+                                            <label for="tab-projects-entityframework" class="projects-tab-header">EntityFramework Core</label>
+                                            <div class="projects-tab-content">
+                                                <h2>EntityFramework Core</h2>
+                                                <p>
+                                                    I've also made a <a href="https://github.com/dotnet/efcore/pull/19437">moderately sized contribution</a> to Entity Framework
+                                                    adding the initial implementation of Change-tracking proxies that are detailed
+                                                    <a href="https://docs.microsoft.com/en-us/ef/core/change-tracking/change-detection#change-tracking-proxies">here</a>
+                                                    that debuted with EF Core 5.0. This involves enabling the proxy generation to also generate implementations for .NET's
+                                                    <kbd>INotifyPropertyChanging</kbd> &amp; <kbd>INotifyPropertyChanged</kbd> interfaces.
+                                                </p>
+                                            </div>    
+                                        </div>
+                                        <div class="projects-tab">
+                                            <input type="radio" id="tab-projects-duosecurity" name="projects-tab-control" checked>
+                                            <label for="tab-projects-duosecurity" class="projects-tab-header">DuoSecurity.Auth.Http</label>
+                                            <div class="projects-tab-content">
+                                                <h2>DuoSecuity.Auth.Http</h2>
+                                                <p>
+                                                    Finally, I built and maintain <a href="https://github.com/orionstudt/DuoSecurity.Auth.Http">DuoSecurity.Auth.Http</a> which is
+                                                    a wrapper for the .NET <kbd>HttpClient</kbd> that provides a simple interface for integrating with Duo Security's
+                                                    <a href="https://duo.com/docs/authapi">Auth API</a> making it very easy to add two-factor authentication to your application,
+                                                    and is available <a href="https://www.nuget.org/packages/DuoSecurity.Auth.Http">on NuGet.</a>
+                                                </p>
+                                            </div>    
+                                        </div>
                                     </section>
-                                </div>
-                            </div>
-                            <div class="card-icons">
-                                <div class="card-icon-row">
-                                    <a id="github" target="_blank" href="https://github.com/orionstudt" class="icon-link" title="GitHub">
-                                        <svg class="icon-svg icon-svg--github" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                            <title>GitHub</title>
-                                            <g class="icon-group" fill="none" fill-rule="evenodd">
-                                            <circle class="icon-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
-                                            <circle class="icon-group__inner-circle" fill="#000" cx="300" cy="300" r="252.5" />
-                                            <path class="icon-group__icon" d="M300 150c-82.8348 0-150 68.8393-150 153.817 0 67.9687 42.991 125.558 102.5893 145.9151 7.5 1.4063 10.2455-3.3482 10.2455-7.433 0-3.683-.134-13.3259-.2009-26.183-41.7187 9.308-50.558-20.625-50.558-20.625-6.8304-17.7456-16.6741-22.5-16.6741-22.5-13.5938-9.576 1.0044-9.375 1.0044-9.375 15.067 1.0714 22.9688 15.8705 22.9688 15.8705 13.3929 23.5045 35.0893 16.741 43.6607 12.7902 1.3393-9.9107 5.2232-16.741 9.509-20.558-33.2813-3.884-68.3036-17.076-68.3036-76.0045 0-16.808 5.8259-30.5357 15.4018-41.25-1.5402-3.884-6.6965-19.5536 1.4732-40.7143 0 0 12.5893-4.1518 41.25 15.7366 11.9866-3.4152 24.7768-5.0893 37.567-5.1562 12.7231.067 25.5803 1.741 37.5669 5.1562 28.6607-19.8884 41.183-15.7366 41.183-15.7366 8.1697 21.1607 3.0134 36.8304 1.4733 40.7143 9.5758 10.7812 15.4017 24.509 15.4017 41.25 0 59.0625-35.0892 72.0536-68.5044 75.8705 5.3571 4.7545 10.1785 14.1295 10.1785 28.4598 0 20.558-.2009 37.1652-.2009 42.1875 0 4.0849 2.6786 8.9063 10.3125 7.3661C407.076 429.308 450 371.7187 450 303.817 450 218.8393 382.8348 150 300 150z"
-                                                fill="#FFF" fill-rule="nonzero" />
-                                            </g>
-                                        </svg>
-                                    </a>
-                                    <a id="linkedin" target="_blank" href="https://linkedin.com/in/orionstudt" class="icon-link" title="LinkedIn">
-                                        <svg class="icon-svg icon-svg--linkedin" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                                            <title>LinkedIn</title>
-                                            <g class="icon-group" fill="none" fill-rule="evenodd">
-                                            <circle class="icon-group__outline" stroke="#000" stroke-width="20" cx="300" cy="300" r="262.5" />
-                                            <circle class="icon-group__inner-circle" fill="#2D76B0" cx="300" cy="300" r="252.5" />
-                                            <path class="icon-group__icon" d="M278.9308 253.1923h43.5769v20.0539h.5923c6.0923-11.5077 20.9-23.6077 43.0692-23.6077 46.0308 0 54.577 30.2923 54.577 69.723v80.2154h-45.4385v-71.1615c0-17.0077-.2539-38.8385-23.6077-38.8385-23.6923 0-27.2462 18.5308-27.2462 37.5693v72.4307h-45.4384l-.0846-146.3846zm-74.1231 0h45.523V399.577h-45.523V253.1923zm22.8461-72.7692c14.5539 0 26.4 11.8461 26.4 26.4 0 14.5538-11.8461 26.4-26.4 26.4-14.6384 0-26.4-11.8462-26.4-26.4 0-14.5539 11.7616-26.4 26.4-26.4z"
-                                                fill="#000" fill-rule="nonzero" />
-                                            </g>
-                                        </svg>
-                                    </a>
                                 </div>
                             </div>
                         </div>
