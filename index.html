@@ -66,19 +66,21 @@
                             <div class="card-tabs">
                                 <input type="radio" id="tab-about" name="tab-control" checked>
                                 <input type="radio" id="tab-projects" name="tab-control">
-                                <ul class="card-tab-list">
-                                    <li title="About">
-                                        <label for="tab-about" role="button">About</label>
-                                    </li>
-                                    <li title="Work">
-                                        <label for="tab-projects" role="button">Projects</label>
-                                    </li>
-                                </ul>
-                                <div class="card-tab-slider">
-                                    <div class="card-tab-indicator"></div>
+                                <div class="card-tab-controller">
+                                    <ul class="card-tab-list">
+                                        <li title="About">
+                                            <label for="tab-about" role="button">About</label>
+                                        </li>
+                                        <li title="Work">
+                                            <label for="tab-projects" role="button">Projects</label>
+                                        </li>
+                                    </ul>
+                                    <div class="card-tab-slider">
+                                        <div class="card-tab-indicator"></div>
+                                    </div>
                                 </div>
                                 <div class="card-tab-text">
-                                    <section class="card-bottom-padding">
+                                    <section>
                                         <h2>About</h2>
                                         <p>
                                             I'm a backend / dev-ops engineer in Raleigh, NC. I have been building and integrating
@@ -97,8 +99,13 @@
                                     <section>
                                         <h2>Projects</h2>
                                         <div class="projects-tab">
-                                            <input type="radio" id="tab-projects-pulumi" name="projects-tab-control" checked>
-                                            <label for="tab-projects-pulumi" class="projects-tab-header">Pulumi</label>
+                                            <input type="radio" id="tab-projects-pulumi" name="projects-tab-control">
+                                            <label for="tab-projects-pulumi" class="projects-tab-header">
+                                                <div>
+                                                    <div class="project-name">Pulumi</div>
+                                                    <div class="project-type">(Contribution)</div>
+                                                </div>
+                                            </label>
                                             <div class="projects-tab-content">
                                                 <h2>Pulumi</h2>
                                                 <p>
@@ -112,22 +119,13 @@
                                             </div>    
                                         </div>
                                         <div class="projects-tab">
-                                            <input type="radio" id="tab-projects-entityframework" name="projects-tab-control" checked>
-                                            <label for="tab-projects-entityframework" class="projects-tab-header">EntityFramework Core</label>
-                                            <div class="projects-tab-content">
-                                                <h2>EntityFramework Core</h2>
-                                                <p>
-                                                    I've also made a <a href="https://github.com/dotnet/efcore/pull/19437">moderately sized contribution</a> to Entity Framework
-                                                    adding the initial implementation of Change-tracking proxies that are detailed
-                                                    <a href="https://docs.microsoft.com/en-us/ef/core/change-tracking/change-detection#change-tracking-proxies">here</a>
-                                                    that debuted with EF Core 5.0. This involves enabling the proxy generation to also generate implementations for .NET's
-                                                    <kbd>INotifyPropertyChanging</kbd> &amp; <kbd>INotifyPropertyChanged</kbd> interfaces.
-                                                </p>
-                                            </div>    
-                                        </div>
-                                        <div class="projects-tab">
-                                            <input type="radio" id="tab-projects-duosecurity" name="projects-tab-control" checked>
-                                            <label for="tab-projects-duosecurity" class="projects-tab-header">DuoSecurity.Auth.Http</label>
+                                            <input type="radio" id="tab-projects-duosecurity" name="projects-tab-control">
+                                            <label for="tab-projects-duosecurity" class="projects-tab-header">
+                                                <div>
+                                                    <div class="project-name">DuoSecurity.Auth.Http</div>
+                                                    <div class="project-type">(Project)</div>
+                                                </div>
+                                            </label>
                                             <div class="projects-tab-content">
                                                 <h2>DuoSecuity.Auth.Http</h2>
                                                 <p>
@@ -135,6 +133,25 @@
                                                     a wrapper for the .NET <kbd>HttpClient</kbd> that provides a simple interface for integrating with Duo Security's
                                                     <a href="https://duo.com/docs/authapi">Auth API</a> making it very easy to add two-factor authentication to your application,
                                                     and is available <a href="https://www.nuget.org/packages/DuoSecurity.Auth.Http">on NuGet.</a>
+                                                </p>
+                                            </div>    
+                                        </div>
+                                        <div class="projects-tab">
+                                            <input type="radio" id="tab-projects-entityframework" name="projects-tab-control">
+                                            <label for="tab-projects-entityframework" class="projects-tab-header">
+                                                <div>
+                                                    <div class="project-name">EntityFramework.Core</div>
+                                                    <div class="project-type">(Contribution)</div>
+                                                </div>
+                                            </label>
+                                            <div class="projects-tab-content">
+                                                <h2>EntityFramework Core</h2>
+                                                <p>
+                                                    I've also <a href="https://github.com/dotnet/efcore/pull/19437">made a contribution</a> to Entity Framework
+                                                    adding the initial implementation of Change-tracking proxies that are detailed
+                                                    <a href="https://docs.microsoft.com/en-us/ef/core/change-tracking/change-detection#change-tracking-proxies">here</a>
+                                                    that debuted with EF Core 5.0. This involves enabling the proxy generation to also generate implementations for .NET's
+                                                    <kbd>INotifyPropertyChanging</kbd> &amp; <kbd>INotifyPropertyChanged</kbd> interfaces.
                                                 </p>
                                             </div>    
                                         </div>

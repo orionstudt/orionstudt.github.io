@@ -177,14 +177,7 @@ div.card-bottom {
 
 div.card-bottom-content {
     border-radius: inherit;
-}
-
-div.card-heading {
-    padding: 25px 25px 0;
-}
-
-.card-bottom-padding {
-    padding: 0 25px 25px;
+    padding: 25px;
 }
 
 h1.card-title {
@@ -209,11 +202,6 @@ h3.card-subtitle {
     animation: 1.5s text-spawn ease-out;
     text-align: center;
     color: #717171;
-}
-
-h3.card-subtitle span {
-    border-top: 2px solid #dbdbdb;
-    padding-top: 4px;
 }
 
 /* Card Tab Styles */
@@ -351,29 +339,23 @@ div.card-tabs div.card-tab-text section h2::after {
     left: 1px;
 }
 
-/* Projects Tab Styles */
-
-div.projects-tab input[name="projects-tab-control"] {
-    display: none;
-}
-
 /* Slider Animation Styles */
 
-input[name="tab-control"]:nth-of-type(1):checked ~ ul > li:nth-child(1) label {
+input[name="tab-control"]:nth-of-type(1):checked ~ div.card-tab-controller ul.card-tab-list > li:nth-child(1) label {
     cursor: default;
     color: var(--accent);
 }
 
-input[name="tab-control"]:nth-of-type(2):checked ~ ul > li:nth-child(2) label {
+input[name="tab-control"]:nth-of-type(2):checked ~ div.card-tab-controller ul.card-tab-list > li:nth-child(2) label {
     cursor: default;
     color: var(--accent);
 }
 
-input[name="tab-control"]:nth-of-type(1):checked ~ div.card-tab-slider {
+input[name="tab-control"]:nth-of-type(1):checked ~ div.card-tab-controller div.card-tab-slider {
     transform: translateX(calc(100% * (1 - 1)));
 }
 
-input[name="tab-control"]:nth-of-type(2):checked ~ div.card-tab-slider {
+input[name="tab-control"]:nth-of-type(2):checked ~ div.card-tab-controller div.card-tab-slider {
     transform: translateX(calc(100% * (2 - 1)));
 }
 
@@ -383,6 +365,102 @@ input[name="tab-control"]:nth-of-type(1):checked ~ div.card-tab-text > section:n
 
 input[name="tab-control"]:nth-of-type(2):checked ~ div.card-tab-text > section:nth-child(2) {
     display: block;
+}
+
+/* Projects Tab Styles */
+
+div.projects-tab input[name="projects-tab-control"] {
+    display: none;
+}
+
+div.projects-tab h2 {
+    color: var(--accent);
+    display: none;
+}
+
+div.projects-tab div.projects-tab-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+div.projects-tab div.projects-tab-content p {
+    padding-bottom: 10px;
+}
+
+div.projects-tab input[name="projects-tab-control"]:checked ~ div.projects-tab-content {
+    max-height: 100vh;
+}
+
+div.projects-tab input[name="projects-tab-control"]:checked ~ label.projects-tab-header div.project-name {
+    color: var(--accent);
+}
+
+div.projects-tab input[name="projects-tab-control"]:checked ~ label.projects-tab-header div.project-type {
+    color: black;
+}
+
+div.projects-tab input[name="projects-tab-control"]:checked ~ label.projects-tab-header::after {
+    transform: rotate(90deg);
+    color: var(--accent);
+}
+
+div.projects-tab input[name="projects-tab-control"]:not(:checked) ~ label.projects-tab-header {
+    cursor: pointer;
+}
+
+div.projects-tab input[name="projects-tab-control"]:not(:checked) ~ label.projects-tab-header:hover div.project-name {
+    color: black;
+}
+
+div.projects-tab input[name="projects-tab-control"]:not(:checked) ~ label.projects-tab-header:hover div.project-type {
+    color: black;
+}
+
+div.projects-tab input[name="projects-tab-control"]:not(:checked) ~ label.projects-tab-header:hover::after {
+    color: black;
+}
+
+div.projects-tab:nth-of-type(3) div.projects-tab-content p {
+    padding-bottom: 0;
+}
+
+div.projects-tab label.projects-tab-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top-style: solid;
+    border-top-color: #b3bdc6;
+    border-top-width: 1px;
+    padding: 10px 0;
+}
+
+div.projects-tab label.projects-tab-header::after {
+    content: "\276F";
+    color: #b3bdc6;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all .5s;
+}
+
+div.projects-tab:nth-of-type(1) label.projects-tab-header {
+    border: none;
+}
+
+div.projects-tab label.projects-tab-header div.project-name {
+    color: #b3bdc6;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+div.projects-tab label.projects-tab-header div.project-type {
+    color: #83898e;
+    font-size: 12px;
 }
 
 /* Card Icon Styles */
