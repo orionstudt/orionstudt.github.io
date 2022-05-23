@@ -450,6 +450,7 @@ div.projects-tab label.projects-tab-header::after {
 
 div.projects-tab:nth-of-type(1) label.projects-tab-header {
     border: none;
+    padding-top: 0;
 }
 
 div.projects-tab label.projects-tab-header div.project-name {
