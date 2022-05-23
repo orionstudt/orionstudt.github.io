@@ -66,6 +66,28 @@ body {
     background: rgba(0, 0, 0, 0) radial-gradient(91.4% 65% at 50% 0%, rgb(67, 67, 67) 0%, rgb(60, 60, 60) 100%) repeat scroll 0% 0%;
 }
 
+kbd {
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .4rem;
+    line-height: 1.5;
+    padding: .1rem .5rem;
+    margin: 0 .1rem;
+    color: rgba(0,0,0,.85);
+}
+
+a {
+    background-color: transparent;
+    color: #1588f3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4196e6;
+    text-decoration: underline;
+}
+
 div.container {
     display: flex;
     flex-direction: row;
