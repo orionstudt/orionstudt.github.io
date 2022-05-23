@@ -177,7 +177,7 @@ div.card-bottom {
 
 div.card-bottom-content {
     border-radius: inherit;
-    padding: 25px;
+    padding: 25px 25px 10px 25px;
 }
 
 h1.card-title {
@@ -299,7 +299,7 @@ div.card-tabs div.card-tab-slider div.card-tab-indicator {
 }
 
 div.card-tabs div.card-tab-text {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 @keyframes tab-content {
@@ -466,10 +466,9 @@ div.projects-tab label.projects-tab-header div.project-type {
 /* Card Icon Styles */
 
 div.card-icons {
-    z-index: 15;
-    position: absolute;
-    bottom: 1%;
-    right: 1%;
+    display: block;
+    width: 100%;
+    padding-top: 5px;
 }
 
 div.card-icon-row {
@@ -494,12 +493,8 @@ div.card-icon-row {
 }
 
 .icon-link .icon-svg {
-    width: 3rem;
-    height: 3rem;
-}
-
-.icon-link[id="github"] {
-    margin-right: 8px;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .icon-link .icon-svg--github {
