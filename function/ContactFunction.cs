@@ -64,7 +64,7 @@ namespace OrionStudt.ContactFunction
                 .From(settings.FromAddress)
                 .To(settings.ToAddress)
                 .ReplyTo(email)
-                .Subject(settings.Subject)
+                .Subject(string.Format(settings.SubjectFormat, from))
                 .Body(content.ToString())
                 .Tag("PersonalWebsiteContact");
 
@@ -106,7 +106,7 @@ namespace OrionStudt.ContactFunction
 
             public string ToAddress { get; set; }
 
-            public string Subject { get; set; }
+            public string SubjectFormat { get; set; }
         }
     }
 }
