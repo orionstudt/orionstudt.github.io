@@ -90,7 +90,7 @@ namespace OrionStudt.ContactFunction
         }
 
         private static ProblemDetails BadRequestDetails(string detail)
-            => new ProblemDetails
+            => new()
             {
                 Status = 400,
                 Title = ReasonPhrases.GetReasonPhrase(400),
