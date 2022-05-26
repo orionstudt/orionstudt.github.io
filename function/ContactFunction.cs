@@ -48,7 +48,7 @@ namespace OrionStudt.ContactFunction
                 .Build();
 
             var content = new StringBuilder();
-            content.AppendLine("Form Submission - studt.me");
+            content.AppendLine("Contact Submission - studt.me");
             content.AppendLine("-------------------------------");
             content.AppendLine($"From: {from}");
             content.AppendLine($"Email: {email}");
@@ -64,7 +64,7 @@ namespace OrionStudt.ContactFunction
                 .From(settings.FromAddress)
                 .To(settings.ToAddress)
                 .ReplyTo(email)
-                .Subject(string.Format(settings.SubjectFormat, from))
+                .Subject(settings.Subject)
                 .Body(content.ToString())
                 .Tag("PersonalWebsiteContact");
 
@@ -106,7 +106,7 @@ namespace OrionStudt.ContactFunction
 
             public string ToAddress { get; set; }
 
-            public string SubjectFormat { get; set; }
+            public string Subject { get; set; }
         }
     }
 }
