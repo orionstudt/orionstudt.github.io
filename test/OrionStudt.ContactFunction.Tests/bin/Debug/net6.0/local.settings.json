@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "SendGridSettings:ApiKey": "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",
+    "SendGridSettings:Domain": "studt.me",
+    "SendGridSettings:FromAddress": "noreply@studt.me",
+    "SendGridSettings:ToAddress": "orionstudt@gmail.com",
+    "SendGridSettings:SubjectFormat": "Studt.me Contact Submission - {0}",
+    "SendGridSettings:Category": "PersonalWebsiteContact"
+  }
+}
